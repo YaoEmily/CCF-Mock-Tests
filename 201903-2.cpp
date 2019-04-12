@@ -22,10 +22,10 @@ int main(void){
         deq.push_back(arr[0]);
         int tmp = 0;
         while(tmp < 3){
-            if(p[tmp]=='*' || p[tmp]=='/'){
+            if(p[tmp]=='x' || p[tmp]=='/'){
                 int x = deq.back();
                 deq.pop_back();
-                if(p[tmp]=='*'){
+                if(p[tmp]=='x'){
                     x *= arr[tmp+1];
                 }else{
                     x /= arr[tmp+1];
